@@ -1,0 +1,12 @@
+C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.AssemblyReference.cache
+C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.SuggestedBindingRedirects.cache
+C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.Properties.Resources.resources
+C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.GenerateResource.cache
+C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.CoreCompileInputs.cache
+C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.Weather.resources
+C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\bin\Debug\WeatherDisplay.exe.config
+C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\bin\Debug\WeatherDisplay.exe
+C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\bin\Debug\WeatherDisplay.pdb
+C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.exe
+C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.pdb
+C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.CopyComplete
