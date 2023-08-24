@@ -50,19 +50,12 @@ Access level Read Only, Size 16 bits
 Access level Read/Write, Size 16 bits
 
 | Device function | Register Address | Modbus Address | Measurement Unit | Range | Comment |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 | HR_CALIB_VALUE | 40001 | 0x00 |  |  | Calibration works only from command line |
 | HR_CALIB_CH | 40002 | 0x01 |  |  | Calibration works only from command line |
 | HR_BAUDRATE | 40003 | 0x02 | hz/100 | 12..9216 | |
-| HR_ADDRESS | 40004 | 0x03 | | 0..10000 | |
-| 4-20mA_OUT_1 | 40005 | 0x04 | uA | 4000..20000 |
-| 4-20mA_OUT_2 | 40006 | 0x05 | uA | 4000..20000 |
-| 4-20mA_OUT_3 | 40007 | 0x06 | uA | 4000..20000 |
-| 4-20mA_OUT_4 | 40008 | 0x07 | uA | 4000..20000 |
-| OPEN_DRAIN_PWM_1 | 40009 | 0x08 |  | 0..10000 |
-| OPEN_DRAIN_PWM_2 | 40010 | 0x09 |  | 0..10000 |
-| OPEN_DRAIN_PWM_3 | 40011 | 0x0a |  | 0..10000 |
-| OPEN_DRAIN_PWM_4 | 40012 | 0x0b |  | 0..10000 |
+| HR_ADDRESS | 40004 | 0x03 | | 1..254 | |
+
 
 
 ## Function codes implemented
