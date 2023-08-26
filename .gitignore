@@ -1,5 +1,5 @@
 #Log files
-*.txt
+#*.txt
 
 # Prerequisites
 *.d
