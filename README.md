@@ -26,7 +26,6 @@ Access level Read Only, Size 1 bit
 | DI_INT_SNS_ERROR | 0x01 | 10005 | Internal pressure sensor error flag |
 | DI_ACC_ERROR | 0x01 | 10006 | Acceleration sensor error flag |
 
-*Notes: The calibration can be done and monitored only from CLI, so the variables calibration related are not implemented*
 
 ### Input registers
 
@@ -85,3 +84,6 @@ Access level Read/Write, Size 16 bits
 * Write Single Register (0x06)
 * Write Multiple Coils (0x0f)
 * Write Multiple registers (0x10)
+
+*Notes: The calibration can be done and monitored only from CLI, so the variables calibration related are not implemented*
+
