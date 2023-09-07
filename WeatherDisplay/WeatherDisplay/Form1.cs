@@ -21,22 +21,32 @@ namespace WeatherDisplay
 {
     enum W_IR
     {
-       // BEGIN_IR_ADD = 30000,
-        IR_4_20MA_IN1,
-        IR_4_20MA_IN2,
-        IR_0_5V_IN,
-        IR_RTD,
+        // BEGIN_IR_ADD = 30000,
+        IR_4_20MA_IN_HI1,
+        IR_4_20MA_IN_LO1,
+        IR_4_20MA_IN_HI2,
+        IR_4_20MA_IN_LO2,
+        IR_0_5V_IN_HI,
+        IR_0_5V_IN_LO,
+        IR_RTD_HI,
+        IR_RTD_LO,
         IR_PULSE_COUNTER,
-        IR_PHOTO,
+        IR_PHOTO_HI,
+        IR_PHOTO_LO,
         IR_INT_PRESS_HI,
         IR_INT_PRESS_LO,
-        IR_INT_TEMP,
-        IR_PITCH,
-        IR_ROLL,
+        IR_INT_TEMP_HI,
+        IR_INT_TEMP_LO,
+        IR_PITCH_HI,
+        IR_PITCH_LO,
+        IR_ROLL_HI,
+        IR_ROLL_LO,
         IR_EXT_PRESS_HI,
         IR_EXT_PRESS_LO,
-        IR_EXT_TEMP,
-        IR_EXT_HUM,
+        IR_EXT_TEMP_HI,
+        IR_EXT_TEMP_LO,
+        IR_EXT_HUM_HI,
+        IR_EXT_HUM_LO,
         END_IR_ADD,
     }
     public partial class Weather : Form
@@ -119,10 +129,23 @@ namespace WeatherDisplay
                 modbusClient.Disconnect();
             }
         }
+        private float ExtractFloat(int[] array, int index)
+        {
+            float result = 0;
+            byte[] source = new byte[4];
+
+            source[0] = (byte)(array[index] & 0xff);
+            source[1] = (byte)((array[index] >> 8) & 0xff);
+            source[2] = (byte)(array[index + 1] & 0xff);
+            source[3] = (byte)((array[index+1] >> 8) & 0xff);
+            result = System.BitConverter.ToSingle(source, 0);
+
+            return result;
+        }
         private void ReadData()
         {
             byte[] source = new byte[4];
-            float myFloat = 0;
+            
             if(mbConnect == 0)
             {
                 return;
@@ -132,39 +155,29 @@ namespace WeatherDisplay
             
             try
             {
-                registers = modbusClient.ReadInputRegisters((int)W_IR.IR_4_20MA_IN1, (int)W_IR.IR_EXT_HUM + 1);
+                registers = modbusClient.ReadInputRegisters((int)W_IR.IR_4_20MA_IN_HI1, (int)W_IR.END_IR_ADD);
                 errorMsg.Text = "";
-
-
             }
             catch (Exception)
             {
                 errorMsg.Text = "Modbus Error";
                 return;
             }
-            label_I1.Text = "I1: " + (registers[(int)W_IR.IR_4_20MA_IN1] / 1000.0).ToString() + " mA";
-            label_I2.Text = "I2: " + (registers[(int)W_IR.IR_4_20MA_IN2] / 1000.0).ToString() + " mA";
-            label_0_5V.Text = "0_5V: " + (registers[(int)W_IR.IR_0_5V_IN] / 1000.0).ToString() + " mV";
-            label_RTD.Text = "RTD: " + (registers[(int)W_IR.IR_RTD] / 100.0).ToString() + " deg C";
+            label_I1.Text = "I1: " + ExtractFloat(registers, (int)W_IR.IR_4_20MA_IN_HI1).ToString("F") ;
+            label_I2.Text = "I2: " + ExtractFloat(registers, (int)W_IR.IR_4_20MA_IN_HI2).ToString("F") ;
+            label_0_5V.Text = "0_5V: " + ExtractFloat(registers, (int)W_IR.IR_0_5V_IN_HI).ToString("F");
+            label_RTD.Text = "RTD: " + ExtractFloat(registers, (int)W_IR.IR_RTD_HI).ToString("F") + " deg C";
             label_CNT.Text = "Count: " + (registers[(int)W_IR.IR_PULSE_COUNTER]).ToString();
-            label_Photo.Text = "Photo: " + (registers[(int)W_IR.IR_PHOTO] / 1000.0).ToString() + " V";
-            source[0] = (byte)(registers[(int)W_IR.IR_INT_PRESS_HI] & 0xff);
-            source[1] = (byte)((registers[(int)W_IR.IR_INT_PRESS_HI] >> 8) & 0xff);
-            source[2] = (byte)(registers[(int)W_IR.IR_INT_PRESS_LO] & 0xff);
-            source[3] = (byte)((registers[(int)W_IR.IR_INT_PRESS_LO] >> 8) & 0xff);
-            myFloat = System.BitConverter.ToSingle(source, 0);
-            label_Int_Prs.Text = "Int Press: " + myFloat.ToString() + " Pa";
-            label_int_temp.Text = "Int Temp: " + (registers[(int)W_IR.IR_INT_TEMP] / 100.0).ToString() + " deg C";
-            label_pitch.Text = "Pitch: " + (registers[(int)W_IR.IR_PITCH] / 100.0).ToString() + " deg";
-            label_roll.Text = "Roll: " + (registers[(int)W_IR.IR_ROLL] / 100.0).ToString() + " deg";
-            source[0] = (byte)(registers[(int)W_IR.IR_EXT_PRESS_HI] & 0xff);
-            source[1] = (byte)((registers[(int)W_IR.IR_EXT_PRESS_HI] >> 8) & 0xff);
-            source[2] = (byte)(registers[(int)W_IR.IR_EXT_PRESS_LO] & 0xff);
-            source[3] = (byte)((registers[(int)W_IR.IR_EXT_PRESS_LO] >> 8) & 0xff);
-            myFloat = System.BitConverter.ToSingle(source, 0);
-            label_ext_press.Text = "Ext Press: " + myFloat.ToString() + " Pa";
-            label_ext_temp.Text = "Ext Temp: " + (registers[(int)W_IR.IR_EXT_TEMP] / 100.0).ToString() + " deg C";
-            label_ext_hum.Text = "Humidity: " + (registers[(int)W_IR.IR_EXT_HUM] / 100.0).ToString() + " %";
+            label_Photo.Text = "Photo: " + ExtractFloat(registers, (int)W_IR.IR_PHOTO_HI).ToString("F") ;
+          
+            label_Int_Prs.Text = "Int Press: " + ExtractFloat(registers, (int)W_IR.IR_INT_PRESS_HI) + " Pa";
+            label_int_temp.Text = "Int Temp: " + ExtractFloat(registers, (int)W_IR.IR_INT_TEMP_HI).ToString() + " deg C";
+            label_pitch.Text = "Pitch: " + ExtractFloat(registers, (int)W_IR.IR_PITCH_HI).ToString("F") + " deg";
+            label_roll.Text = "Roll: " + ExtractFloat(registers, (int)W_IR.IR_ROLL_HI).ToString("F") + " deg";
+           
+            label_ext_press.Text = "Ext Press: " + ExtractFloat(registers, (int)W_IR.IR_EXT_PRESS_HI).ToString() + " Pa";
+            label_ext_temp.Text = "Ext Temp: " + ExtractFloat(registers, (int)W_IR.IR_EXT_TEMP_HI).ToString() + " deg C";
+            label_ext_hum.Text = "Humidity: " + ExtractFloat(registers, (int)W_IR.IR_EXT_HUM_HI).ToString() + " %";
         }
         private void button2_Click(object sender, EventArgs e)
         {

@@ -10,3 +10,15 @@ C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\bin\Debug\WeatherDi
 C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.exe
 C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.pdb
 C:\~work\Drafts\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.CopyComplete
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\bin\Debug\WeatherDisplay.exe.config
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\bin\Debug\WeatherDisplay.exe
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\bin\Debug\WeatherDisplay.pdb
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.AssemblyReference.cache
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.SuggestedBindingRedirects.cache
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.Weather.resources
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.Properties.Resources.resources
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.GenerateResource.cache
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.CoreCompileInputs.cache
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.CopyComplete
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.exe
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.pdb
