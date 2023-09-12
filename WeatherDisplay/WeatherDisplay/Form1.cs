@@ -170,12 +170,12 @@ namespace WeatherDisplay
             label_CNT.Text = "Count: " + (registers[(int)W_IR.IR_PULSE_COUNTER]).ToString();
             label_Photo.Text = "Photo: " + ExtractFloat(registers, (int)W_IR.IR_PHOTO_HI).ToString("F") ;
           
-            label_Int_Prs.Text = "Int Press: " + ExtractFloat(registers, (int)W_IR.IR_INT_PRESS_HI) + " Pa";
+            label_Int_Prs.Text = "Int Press: " + ExtractFloat(registers, (int)W_IR.IR_INT_PRESS_HI) + " mbar";
             label_int_temp.Text = "Int Temp: " + ExtractFloat(registers, (int)W_IR.IR_INT_TEMP_HI).ToString() + " deg C";
             label_pitch.Text = "Pitch: " + ExtractFloat(registers, (int)W_IR.IR_PITCH_HI).ToString("F") + " deg";
             label_roll.Text = "Roll: " + ExtractFloat(registers, (int)W_IR.IR_ROLL_HI).ToString("F") + " deg";
            
-            label_ext_press.Text = "Ext Press: " + ExtractFloat(registers, (int)W_IR.IR_EXT_PRESS_HI).ToString() + " Pa";
+            label_ext_press.Text = "Ext Press: " + ExtractFloat(registers, (int)W_IR.IR_EXT_PRESS_HI).ToString() + " mbar";
             label_ext_temp.Text = "Ext Temp: " + ExtractFloat(registers, (int)W_IR.IR_EXT_TEMP_HI).ToString() + " deg C";
             label_ext_hum.Text = "Humidity: " + ExtractFloat(registers, (int)W_IR.IR_EXT_HUM_HI).ToString() + " %";
         }
