@@ -14,7 +14,6 @@ C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\bin\Debug\WeatherDi
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\bin\Debug\WeatherDisplay.exe
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\bin\Debug\WeatherDisplay.pdb
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.AssemblyReference.cache
-C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.SuggestedBindingRedirects.cache
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.Weather.resources
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.Properties.Resources.resources
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.GenerateResource.cache

@@ -49,6 +49,17 @@ namespace WeatherDisplay
         IR_EXT_HUM_LO,
         END_IR_ADD,
     }
+    enum W_HR
+    {
+        //BEGIN_HR_ADD = 40000,
+        HR_CALIB_VALUE_HI,
+        HR_CALIB_VALUE_LO,
+        HR_CALIB_CH,
+        HR_BAUDRATE,
+        HR_ADDRESS,
+        HR_SPARE,
+        END_HR_ADD,
+    }
     public partial class Weather : Form
     {
         byte mbConnect = 0;
@@ -93,6 +104,7 @@ namespace WeatherDisplay
                     mbConnect = 1;
                     button1.Text = "CLOSE";
                     button2.Enabled = true;
+                    groupBox1.Enabled = true;
                     comboBox1.Enabled = false;
                     comboBox2.Enabled = false;
                     comboBox3.Enabled = false;
@@ -110,6 +122,7 @@ namespace WeatherDisplay
                     mbConnect = 0;
                     button1.Text = "OPEN";
                     button2.Enabled= false;
+                    groupBox1.Enabled = false;
                     comboBox1.Enabled = true;
                     comboBox2.Enabled = true;
                     comboBox3.Enabled= true;
@@ -141,6 +154,15 @@ namespace WeatherDisplay
             result = System.BitConverter.ToSingle(source, 0);
 
             return result;
+        }
+
+        private void ExractRegs(out int[] array, float val)
+        {
+            array = new int[2];
+            byte[] source = BitConverter.GetBytes(val);
+            array[0] = source[0] | (source[1] << 8);
+            array[1] = source[2] | (source[3] << 8);
+
         }
         private void ReadData()
         {
@@ -196,5 +218,24 @@ namespace WeatherDisplay
                 ReadData();
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int[] regs = new int[3];
+            int[] floatParts = new int[1];
+            float val = (float)numericUpDown1.Value;
+            ExractRegs(out floatParts, val);
+            regs[0] = (Int16)floatParts[0];
+            regs[1] = (Int16)floatParts[1];
+            regs[2] = Convert.ToInt16(SelectCalCh.Text.Substring(0, 2));
+
+         
+            if (mbConnect == 0)
+            {
+                return;
+            }
+            modbusClient.WriteMultipleRegisters((int)W_HR.HR_CALIB_VALUE_HI, regs);
+        }
+
     }
 }
