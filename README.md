@@ -8,8 +8,10 @@ All modbus RTU object type with standard addresses are implemented : Coils, Disc
 
 Acces level Read/Write, Size 1 bit
 
-| Device function | Register Address | Modbus Address |
+| Device function | Modbus Address | Description |
 | --- | --- | --- |
+| COIL_START_CALIB_CMD | 0x01| Write 1 to start calibration with the last values from the calibration registers|
+| COIL_COUNT_RST| 0x02 | Write 1 to reset the  pulse counter|
 
 
 
