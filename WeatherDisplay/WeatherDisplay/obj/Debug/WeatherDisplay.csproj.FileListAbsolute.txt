@@ -18,6 +18,6 @@ C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDi
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.Properties.Resources.resources
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.GenerateResource.cache
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.CoreCompileInputs.cache
-C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.csproj.CopyComplete
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.exe
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.pdb
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherD.9F505F6A.Up2Date

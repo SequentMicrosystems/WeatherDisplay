@@ -47,6 +47,10 @@ namespace WeatherDisplay
         IR_EXT_TEMP_LO,
         IR_EXT_HUM_HI,
         IR_EXT_HUM_LO,
+        IR_PULSE_H,
+        IR_PULSE_24H,
+        IR_0_100MV_IN_HI,
+        IR_0_100MV_IN_LO,
         END_IR_ADD,
     }
     enum W_HR
@@ -200,6 +204,9 @@ namespace WeatherDisplay
             label_ext_press.Text = "Ext Press: " + ExtractFloat(registers, (int)W_IR.IR_EXT_PRESS_HI).ToString() + " mbar";
             label_ext_temp.Text = "Ext Temp: " + ExtractFloat(registers, (int)W_IR.IR_EXT_TEMP_HI).ToString() + " deg C";
             label_ext_hum.Text = "Humidity: " + ExtractFloat(registers, (int)W_IR.IR_EXT_HUM_HI).ToString() + " %";
+            label_pulse_h.Text = "Pulses per Hour: " + (registers[(int)W_IR.IR_PULSE_H]).ToString();
+            label_pulse_day.Text = "Pulses per Day: " + (registers[(int)W_IR.IR_PULSE_24H]).ToString();
+            label_100mV.Text = "0_100mV: " + ExtractFloat(registers, (int)W_IR.IR_0_100MV_IN_HI).ToString("F");
         }
         private void button2_Click(object sender, EventArgs e)
         {

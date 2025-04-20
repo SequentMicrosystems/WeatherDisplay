@@ -60,6 +60,9 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label_pulse_h = new System.Windows.Forms.Label();
+            this.label_pulse_day = new System.Windows.Forms.Label();
+            this.label_100mV = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
@@ -419,11 +422,41 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Channel";
             // 
+            // label_pulse_h
+            // 
+            this.label_pulse_h.AutoSize = true;
+            this.label_pulse_h.Location = new System.Drawing.Point(24, 520);
+            this.label_pulse_h.Name = "label_pulse_h";
+            this.label_pulse_h.Size = new System.Drawing.Size(540, 80);
+            this.label_pulse_h.TabIndex = 26;
+            this.label_pulse_h.Text = "Pulses per Hour";
+            // 
+            // label_pulse_day
+            // 
+            this.label_pulse_day.AutoSize = true;
+            this.label_pulse_day.Location = new System.Drawing.Point(24, 552);
+            this.label_pulse_day.Name = "label_pulse_day";
+            this.label_pulse_day.Size = new System.Drawing.Size(513, 80);
+            this.label_pulse_day.TabIndex = 27;
+            this.label_pulse_day.Text = "Pulses per Day";
+            // 
+            // label_100mV
+            // 
+            this.label_100mV.AutoSize = true;
+            this.label_100mV.Location = new System.Drawing.Point(24, 588);
+            this.label_100mV.Name = "label_100mV";
+            this.label_100mV.Size = new System.Drawing.Size(375, 80);
+            this.label_100mV.TabIndex = 28;
+            this.label_100mV.Text = "0_100mV: ";
+            // 
             // Weather
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1600, 872);
+            this.Controls.Add(this.label_100mV);
+            this.Controls.Add(this.label_pulse_day);
+            this.Controls.Add(this.label_pulse_h);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label2);
@@ -493,6 +526,9 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label_pulse_h;
+        private System.Windows.Forms.Label label_pulse_day;
+        private System.Windows.Forms.Label label_100mV;
     }
 }
 
