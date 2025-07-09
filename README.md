@@ -78,6 +78,7 @@ Access level Read/Write, Size 16 bits
 | HR_CALIB_CH | 40002 | 0x02 |  |  | Calibration works only from command line |
 | HR_BAUDRATE | 40003 | 0x03 | hz/100 | 12..9216 | |
 | HR_ADDRESS | 40004 | 0x04 | | 1..254 | |
+| HR_PARITY | 40004 | 0x05| | 0..2| 0=NONE; 1=EVEN; 2=ODD|
 
 
 
