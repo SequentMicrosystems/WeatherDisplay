@@ -46,14 +46,14 @@ Access level Read/Write, Size 16 bits
 
 | Device function | Register Address | Modbus Address | Measurement Unit | Range | Comment |
 | --- | --- | --- | --- | --- | --- |
-| HR_CALIB_VALUE_HI | 40001 | 0x00 |  |  | Calibration value as a floating point number |
-| HR_CALIB_VALUE_LO | 40002 | 0x01 |  |  | Calibration value as a floating point number |
-| HR_CALIB_CH | 40003 | 0x02 |  |  | Calibration works only from command line |
-| HR_BAUDRATE | 40004 | 0x03 | hz/100 | 12..9216 | |
-| HR_ADDRESS | 40005 | 0x04 | | 1..254 | |
-| HR_LOW_TEMP | 40006 | 0x05 | &deg;C/100| -32000..32000| The temperature corespond to 4mA output |
-| HR_HIGH_TEMP | 40007 | 0x06 | &deg;C/100| -32000..32000| The temperature corespond to 20mA output |
-| HR_PARITY | 40008 | 0x07  | N/A | 0/1/2 | Parity: 0=none; 1 = even; 2 = odd |
+| HR_CALIB_VALUE_HI | 0x00 | 40001 |  |  | Calibration value as a floating point number |
+| HR_CALIB_VALUE_LO | 0x01 | 40002 |  |  | Calibration value as a floating point number |
+| HR_CALIB_CH  | 0x02 | 40003 |  |  | Calibration works only from command line |
+| HR_BAUDRATE  | 0x03 | 40004 | hz/100 | 12..9216 | |
+| HR_ADDRESS  | 0x04 | 40005 | | 1..254 | |
+| HR_LOW_TEMP  | 0x05 | 40006 | &deg;C/100| -32000..32000| The temperature corespond to 4mA output |
+| HR_HIGH_TEMP | 0x06 | 40007 | &deg;C/100| -32000..32000| The temperature corespond to 20mA output |
+| HR_PARITY | 0x07 | 40008 | N/A | 0/1/2 | Parity: 0=none; 1 = even; 2 = odd |
 
 ## Function codes implemented
 
