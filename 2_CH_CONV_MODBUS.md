@@ -53,6 +53,7 @@ Access level Read/Write, Size 16 bits
 | HR_ADDRESS | 40005 | 0x04 | | 1..254 | |
 | HR_LOW_TEMP | 40006 | 0x05 | degC/100| -32000..32000| The temperature corespond to 4mA output |
 | HR_HIGH_TEMP | 40007 | 0x06 | degC/100| -32000..32000| The temperature corespond to 20mA output |
+| HR_PARITY | 40008 | 0x07  | N/A | 0/1/2 | Parity: 0=none; 1 = even; 2 = oddd |
 
 ## Function codes implemented
 
