@@ -75,10 +75,10 @@ Access level Read/Write, Size 16 bits
 | --- | --- | --- | --- | --- | --- |
 | HR_CALIB_VALUE_HI | 40001 | 0x00 |  |  | Calibration value as a floating point number |
 | HR_CALIB_VALUE_LO | 40002 | 0x01 |  |  | Calibration value as a floating point number |
-| HR_CALIB_CH | 40002 | 0x02 |  |  | Calibration works only from command line |
-| HR_BAUDRATE | 40003 | 0x03 | hz/100 | 12..9216 | |
-| HR_ADDRESS | 40004 | 0x04 | | 1..254 | |
-| HR_PARITY | 40004 | 0x05| | 0..2| 0=NONE; 1=EVEN; 2=ODD|
+| HR_CALIB_CH | 40003 | 0x02 |  |  | Calibration works only from command line |
+| HR_BAUDRATE | 40004 | 0x03 | hz/100 | 12..9216 | |
+| HR_ADDRESS | 40005 | 0x04 | | 1..254 | |
+| HR_PARITY | 40006 | 0x05| | 0..2| 0=NONE; 1=EVEN; 2=ODD|
 
 
 
