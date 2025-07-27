@@ -63,7 +63,7 @@ Access level Read Only, Size 16 bits
 | IR_PULSE_H | 30026 | Pulses per hour for rain sensor| |
 | IR_PULSE_24H | 30027 | Pulses per day for rain sensor| |
 |IR_0_100MV_IN_HI | 30028 | 0-100mV Input high word |  |
-|IR_0_100MV_IN_LO | 30028 | 0-100mV Input low word |  |
+|IR_0_100MV_IN_LO | 30029 | 0-100mV Input low word |  |
 
 
 
