@@ -21,3 +21,4 @@ C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDi
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.exe
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.pdb
 C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherD.9F505F6A.Up2Date
+C:\~work\GitHub\WeatherDisplay\WeatherDisplay\WeatherDisplay\obj\Debug\WeatherDisplay.exe.config
