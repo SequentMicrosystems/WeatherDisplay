@@ -167,9 +167,16 @@ namespace WeatherDisplay
             {
                 comboBox1.Items.Add(port);
             }
+            // populate comboBox3 with values 1..255 (inclusive)
+            for (int i = 1; i <= 255; i++)
+            {
+                comboBox3.Items.Add(i.ToString());
+            }
             comboBox2.SelectedItem = "38400";
             comboBox3.SelectedItem = "1";
             comboBox4.SelectedItem = "NONE";
+
+         
 
             // initialize parameter table (editable floats composed of 2 holding registers)
             InitializeParamTable();

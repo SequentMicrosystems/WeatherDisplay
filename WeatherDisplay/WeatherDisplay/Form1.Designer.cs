@@ -121,7 +121,7 @@
             // errorMsg
             // 
             this.errorMsg.AutoSize = true;
-            this.errorMsg.Location = new System.Drawing.Point(2, 925);
+            this.errorMsg.Location = new System.Drawing.Point(32, 577);
             this.errorMsg.Name = "errorMsg";
             this.errorMsg.Size = new System.Drawing.Size(56, 20);
             this.errorMsg.TabIndex = 5;
@@ -132,7 +132,7 @@
             this.label_I1.AutoSize = true;
             this.label_I1.Location = new System.Drawing.Point(14, 32);
             this.label_I1.Name = "label_I1";
-            this.label_I1.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.label_I1.Padding = new System.Windows.Forms.Padding(1);
             this.label_I1.Size = new System.Drawing.Size(33, 22);
             this.label_I1.TabIndex = 6;
             this.label_I1.Text = "I1: ";
@@ -142,7 +142,7 @@
             this.label_I2.AutoSize = true;
             this.label_I2.Location = new System.Drawing.Point(14, 59);
             this.label_I2.Name = "label_I2";
-            this.label_I2.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.label_I2.Padding = new System.Windows.Forms.Padding(1);
             this.label_I2.Size = new System.Drawing.Size(29, 22);
             this.label_I2.TabIndex = 7;
             this.label_I2.Text = "I2:";
@@ -152,7 +152,7 @@
             this.label_0_5V.AutoSize = true;
             this.label_0_5V.Location = new System.Drawing.Point(14, 84);
             this.label_0_5V.Name = "label_0_5V";
-            this.label_0_5V.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.label_0_5V.Padding = new System.Windows.Forms.Padding(1);
             this.label_0_5V.Size = new System.Drawing.Size(53, 22);
             this.label_0_5V.TabIndex = 8;
             this.label_0_5V.Text = "0_5V:";
@@ -162,7 +162,7 @@
             this.label_RTD.AutoSize = true;
             this.label_RTD.Location = new System.Drawing.Point(14, 108);
             this.label_RTD.Name = "label_RTD";
-            this.label_RTD.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.label_RTD.Padding = new System.Windows.Forms.Padding(1);
             this.label_RTD.Size = new System.Drawing.Size(44, 22);
             this.label_RTD.TabIndex = 9;
             this.label_RTD.Text = "RTD";
@@ -172,7 +172,7 @@
             this.label_int_temp.AutoSize = true;
             this.label_int_temp.Location = new System.Drawing.Point(14, 200);
             this.label_int_temp.Name = "label_int_temp";
-            this.label_int_temp.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.label_int_temp.Padding = new System.Windows.Forms.Padding(1);
             this.label_int_temp.Size = new System.Drawing.Size(79, 22);
             this.label_int_temp.TabIndex = 13;
             this.label_int_temp.Text = "Int_Temp";
@@ -182,7 +182,7 @@
             this.label_Int_Prs.AutoSize = true;
             this.label_Int_Prs.Location = new System.Drawing.Point(14, 176);
             this.label_Int_Prs.Name = "label_Int_Prs";
-            this.label_Int_Prs.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.label_Int_Prs.Padding = new System.Windows.Forms.Padding(1);
             this.label_Int_Prs.Size = new System.Drawing.Size(79, 22);
             this.label_Int_Prs.TabIndex = 12;
             this.label_Int_Prs.Text = "Int_Press";
@@ -192,7 +192,7 @@
             this.label_Photo.AutoSize = true;
             this.label_Photo.Location = new System.Drawing.Point(14, 152);
             this.label_Photo.Name = "label_Photo";
-            this.label_Photo.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.label_Photo.Padding = new System.Windows.Forms.Padding(1);
             this.label_Photo.Size = new System.Drawing.Size(53, 22);
             this.label_Photo.TabIndex = 11;
             this.label_Photo.Text = "Photo";
@@ -202,7 +202,7 @@
             this.label_CNT.AutoSize = true;
             this.label_CNT.Location = new System.Drawing.Point(14, 129);
             this.label_CNT.Name = "label_CNT";
-            this.label_CNT.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.label_CNT.Padding = new System.Windows.Forms.Padding(1);
             this.label_CNT.Size = new System.Drawing.Size(50, 22);
             this.label_CNT.TabIndex = 10;
             this.label_CNT.Text = "Pulse";
@@ -212,7 +212,7 @@
             this.label_ext_hum.AutoSize = true;
             this.label_ext_hum.Location = new System.Drawing.Point(269, 129);
             this.label_ext_hum.Name = "label_ext_hum";
-            this.label_ext_hum.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.label_ext_hum.Padding = new System.Windows.Forms.Padding(1);
             this.label_ext_hum.Size = new System.Drawing.Size(104, 22);
             this.label_ext_hum.TabIndex = 18;
             this.label_ext_hum.Text = "Ext_Humidity";
@@ -222,7 +222,7 @@
             this.label_ext_temp.AutoSize = true;
             this.label_ext_temp.Location = new System.Drawing.Point(270, 106);
             this.label_ext_temp.Name = "label_ext_temp";
-            this.label_ext_temp.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.label_ext_temp.Padding = new System.Windows.Forms.Padding(1);
             this.label_ext_temp.Size = new System.Drawing.Size(85, 22);
             this.label_ext_temp.TabIndex = 17;
             this.label_ext_temp.Text = "Ent_Temp";
@@ -232,7 +232,7 @@
             this.label_ext_press.AutoSize = true;
             this.label_ext_press.Location = new System.Drawing.Point(269, 84);
             this.label_ext_press.Name = "label_ext_press";
-            this.label_ext_press.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.label_ext_press.Padding = new System.Windows.Forms.Padding(1);
             this.label_ext_press.Size = new System.Drawing.Size(83, 22);
             this.label_ext_press.TabIndex = 16;
             this.label_ext_press.Text = "Ext_Press";
@@ -242,7 +242,7 @@
             this.label_roll.AutoSize = true;
             this.label_roll.Location = new System.Drawing.Point(270, 59);
             this.label_roll.Name = "label_roll";
-            this.label_roll.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.label_roll.Padding = new System.Windows.Forms.Padding(1);
             this.label_roll.Size = new System.Drawing.Size(38, 22);
             this.label_roll.TabIndex = 15;
             this.label_roll.Text = "Roll";
@@ -252,7 +252,7 @@
             this.label_pitch.AutoSize = true;
             this.label_pitch.Location = new System.Drawing.Point(269, 32);
             this.label_pitch.Name = "label_pitch";
-            this.label_pitch.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.label_pitch.Padding = new System.Windows.Forms.Padding(1);
             this.label_pitch.Size = new System.Drawing.Size(46, 22);
             this.label_pitch.TabIndex = 14;
             this.label_pitch.Text = "Pitch";
@@ -316,18 +316,6 @@
             // comboBox3
             // 
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11"});
             this.comboBox3.Location = new System.Drawing.Point(119, 148);
             this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox3.Name = "comboBox3";
@@ -342,10 +330,11 @@
             "1 4-20mA Ch1",
             "2 4-20mA Ch2",
             "3 0-5V in",
-            "4 Photodiode",
-            "5 RTD res"});
+            "4 0-100mV in",
+            "5 Photodiode",
+            "6 RTD res"});
             this.SelectCalCh.Location = new System.Drawing.Point(75, 35);
-            this.SelectCalCh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SelectCalCh.Margin = new System.Windows.Forms.Padding(2);
             this.SelectCalCh.Name = "SelectCalCh";
             this.SelectCalCh.Size = new System.Drawing.Size(148, 28);
             this.SelectCalCh.TabIndex = 24;
@@ -362,9 +351,9 @@
             this.groupBox1.Enabled = false;
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.groupBox1.Location = new System.Drawing.Point(917, 24);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(224, 199);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
@@ -382,7 +371,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(75, 142);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(122, 40);
             this.button3.TabIndex = 28;
@@ -394,7 +383,7 @@
             // 
             this.numericUpDown1.DecimalPlaces = 4;
             this.numericUpDown1.Location = new System.Drawing.Point(102, 98);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             32768,
             0,
@@ -469,11 +458,11 @@
             this.colParamName,
             this.colParamValue});
             this.dataGridViewParams.Location = new System.Drawing.Point(36, 253);
-            this.dataGridViewParams.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridViewParams.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridViewParams.Name = "dataGridViewParams";
             this.dataGridViewParams.RowHeadersVisible = false;
             this.dataGridViewParams.RowHeadersWidth = 102;
-            this.dataGridViewParams.Size = new System.Drawing.Size(708, 633);
+            this.dataGridViewParams.Size = new System.Drawing.Size(708, 286);
             this.dataGridViewParams.TabIndex = 90;
             this.dataGridViewParams.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewParams_CellEndEdit);
             // 
@@ -526,7 +515,7 @@
             // 
             // buttonSaveParams
             // 
-            this.buttonSaveParams.Location = new System.Drawing.Point(760, 722);
+            this.buttonSaveParams.Location = new System.Drawing.Point(760, 434);
             this.buttonSaveParams.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonSaveParams.Name = "buttonSaveParams";
             this.buttonSaveParams.Size = new System.Drawing.Size(178, 36);
@@ -537,7 +526,7 @@
             // 
             // buttonLoadParams
             // 
-            this.buttonLoadParams.Location = new System.Drawing.Point(760, 766);
+            this.buttonLoadParams.Location = new System.Drawing.Point(760, 478);
             this.buttonLoadParams.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.buttonLoadParams.Name = "buttonLoadParams";
             this.buttonLoadParams.Size = new System.Drawing.Size(178, 40);
@@ -557,9 +546,9 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.comboBox3);
             this.groupBox2.Location = new System.Drawing.Point(650, 24);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(247, 199);
             this.groupBox2.TabIndex = 104;
             this.groupBox2.TabStop = false;
@@ -603,7 +592,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1197, 952);
+            this.ClientSize = new System.Drawing.Size(1177, 625);
             this.Controls.Add(this.buttonReadFW);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.buttonLoadParams);
