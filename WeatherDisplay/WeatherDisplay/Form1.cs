@@ -297,7 +297,7 @@ namespace WeatherDisplay
         {
             if (mbConnect == 0 || modbusClient == null)
             {
-                errorMsg.Text = "Not connected";
+                errorMsg.Text = "Not connected ";
                 return;
             }
 

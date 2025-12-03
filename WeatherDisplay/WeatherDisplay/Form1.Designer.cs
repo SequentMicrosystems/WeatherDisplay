@@ -622,7 +622,7 @@
             this.Controls.Add(this.button2);
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Weather";
-            this.Text = "Weather Station Data Display and Configuration";
+            this.Text = "Weather Station Data Display and Configuration v2.1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Weather_FormClosing);
             this.Load += new System.EventHandler(this.Weather_Load);
             this.groupBox1.ResumeLayout(false);
