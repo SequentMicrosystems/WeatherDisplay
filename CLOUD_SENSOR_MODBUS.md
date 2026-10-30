@@ -17,7 +17,7 @@ Access level: Read/Write, Size: 1 bit
 
 ### Discrete Inputs
 
-Access level Read Only, Size 1 bit
+Access level: Read Only, Size: 1 bit
 
 | Device function | Register Address | Modbus Address | Description |
 | --- | --- | --- | --- |
@@ -30,7 +30,7 @@ Access level Read Only, Size 1 bit
 
 ### Input registers
 
-Access level Read Only, Size 16 bits
+Access level: Read Only, Size: 16 bits
 
 | Device function | Register Address | Modbus Address| Description | Measurement Unit / resolution |
 | --- | --- | --- | --- | --- |
